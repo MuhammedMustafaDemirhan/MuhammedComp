@@ -3,12 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E896BB4-B3AE-46B2-903A-BD6FC8B22322}|..\\MuhammedCo.Core\\MuhammedCo.Core.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4E896BB4-B3AE-46B2-903A-BD6FC8B22322}|..\\MuhammedCo.Core\\MuhammedCo.Core.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco.core\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E896BB4-B3AE-46B2-903A-BD6FC8B22322}|..\\MuhammedCo.Core\\MuhammedCo.Core.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco.core\\models\\groupinrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +24,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "..\\MuhammedCo.Core\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Models\\Role.cs",
+              "RelativeToolTip": "..\\MuhammedCo.Core\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T18:24:11.5Z",
+              "WhenOpened": "2025-10-28T08:53:25.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T18:00:30.659Z",
+              "Title": "Group.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Models\\Group.cs",
+              "RelativeDocumentMoniker": "..\\MuhammedCo.Core\\Models\\Group.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Models\\Group.cs",
+              "RelativeToolTip": "..\\MuhammedCo.Core\\Models\\Group.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T08:53:31.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GroupInRole.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Models\\GroupInRole.cs",
+              "RelativeDocumentMoniker": "..\\MuhammedCo.Core\\Models\\GroupInRole.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Models\\GroupInRole.cs",
+              "RelativeToolTip": "..\\MuhammedCo.Core\\Models\\GroupInRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T08:53:05.753Z",
               "EditorCaption": ""
             }
           ]
