@@ -15,4 +15,14 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MuhammedCo.Core\MuhammedCo.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="UnitOfWorks\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>

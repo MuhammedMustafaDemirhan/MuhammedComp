@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTO%27s\" />
     <Folder Include="UnitOfWorks\" />
     <Folder Include="Services\" />
     <Folder Include="Repositories\" />
