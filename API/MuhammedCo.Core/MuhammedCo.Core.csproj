@@ -12,9 +12,4 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.14.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UnitOfWorks\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
