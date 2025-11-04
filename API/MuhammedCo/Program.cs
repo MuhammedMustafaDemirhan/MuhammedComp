@@ -1,4 +1,7 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using MuhammedCo.API.Modules;
 using MuhammedCo.Repository;
 using MuhammedCo.Service.Mappings;
 using System.Reflection;
@@ -21,6 +24,10 @@ builder.Services.AddDbContext<AppDbContext>(x =>
         option.MigrationsAssembly(Assembly.GetAssembly(typeof(AppDbContext)).GetName().Name);
     });
 });
+
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => containerBuilder.RegisterModule(new RepoServiceModule()));
 
 var app = builder.Build();
 
