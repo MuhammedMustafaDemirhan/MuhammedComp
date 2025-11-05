@@ -181,3 +181,10 @@ C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\
 C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\Autofac.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\AutoMapper.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\MuhammedCo.Service.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\MuhammedCo.Service.pdb

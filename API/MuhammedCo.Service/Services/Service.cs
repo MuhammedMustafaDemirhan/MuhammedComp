@@ -30,6 +30,11 @@ namespace MuhammedCo.Service.Services
             await _unitOfWorks.CommitAsync();
         }
 
+        public async Task<bool> AnyAsync(Expression<Func<T, bool>> expression)
+        {
+            return await _repository.AnyAsync(expression);
+        }
+
         public void ChangeStatus(T entity)
         {
             entity.UpdatedDate = DateTime.Now;
