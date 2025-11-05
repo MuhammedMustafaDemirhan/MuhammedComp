@@ -188,3 +188,6 @@ C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\
 C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\FluentValidation.dll
 C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\MuhammedCo.Service.dll
 C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\MuhammedCo.Service.pdb
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

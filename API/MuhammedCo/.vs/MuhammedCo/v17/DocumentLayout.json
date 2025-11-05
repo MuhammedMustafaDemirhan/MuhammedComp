@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\filters\\notfoundfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:filters\\notfoundfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NotFoundFilter.cs",
-              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Filters\\NotFoundFilter.cs",
-              "RelativeDocumentMoniker": "Filters\\NotFoundFilter.cs",
-              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Filters\\NotFoundFilter.cs",
-              "RelativeToolTip": "Filters\\NotFoundFilter.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T17:27:58.224Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -41,9 +36,48 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAAC8AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T17:25:55.357Z",
+              "WhenOpened": "2025-11-05T18:09:12.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-05T18:07:45.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomBaseController.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\CustomBaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomBaseController.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\CustomBaseController.cs",
+              "RelativeToolTip": "Controllers\\CustomBaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T17:46:23.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T17:44:38.072Z",
               "EditorCaption": ""
             }
           ]

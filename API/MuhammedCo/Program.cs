@@ -1,5 +1,6 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using MuhammedCo.API.Filters;
 using MuhammedCo.API.Middlewares;
@@ -14,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddScoped(typeof(NotFoundFilter<>));
@@ -39,14 +40,15 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-    app.UseOpenApi();
-    app.UseSwaggerUi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
 
 app.UseCustomException();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ContainingType": "MuhammedCo.API.Controllers.CustomersController",
+    "Method": "All",
+    "RelativePath": "api/Customers/All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
