@@ -1,8 +1,12 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing.Constraints;
+using MuhammedCo.API.Filters;
 using MuhammedCo.Core.DTO_s;
 using MuhammedCo.Core.DTOs;
+using MuhammedCo.Core.DTOs.UpdateDTOs;
+using MuhammedCo.Core.Models;
 using MuhammedCo.Core.Services;
 
 namespace MuhammedCo.API.Controllers
@@ -27,6 +31,61 @@ namespace MuhammedCo.API.Controllers
             var dtos = _mapper.Map<List<CustomerDto>>(customers).ToList();
 
             return CreateActionResult(CustomResponseDto<List<CustomerDto>>.Success(200, dtos));
+        }
+
+        [ServiceFilter(typeof(NotFoundFilter<Customer>))]
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var customer = await _customerService.GetByIdAsync(id);
+            var customerDto = _mapper.Map<CustomerDto>(customer);
+            return CreateActionResult(CustomResponseDto<CustomerDto>.Success(200, customerDto));
+        }
+
+        [ServiceFilter(typeof(NotFoundFilter<Customer>))]
+        [HttpGet("[action]")]
+        public async Task<IActionResult> Remove(int id)
+        {
+            int userId = 1;
+
+            var customer = await _customerService.GetByIdAsync(id);
+            customer.UpdatedBy = userId;
+
+            _customerService.ChangeStatus(customer);
+
+            return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Save(CustomerDto customerDto)
+        {
+            int userId = 1;
+
+            var processedEntity = _mapper.Map<Customer>(customerDto);
+
+            processedEntity.UpdatedBy = userId;
+            processedEntity.CreatedBy = userId;
+
+            var customer = await _customerService.AddAsync(processedEntity);
+
+            var customerResponseDto = _mapper.Map<CustomerDto>(customer);
+
+            return CreateActionResult(CustomResponseDto<CustomerDto>.Success(201, customerDto));
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update(CustomerUpdateDto customerDto)
+        {
+            var userId = 1;
+
+            var currentCustomer = await _customerService.GetByIdAsync(customerDto.Id);
+
+            currentCustomer.UpdatedBy = userId;
+            currentCustomer.Name = customerDto.Name;
+
+            _customerService.Update(currentCustomer);
+
+            return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
     }
 }

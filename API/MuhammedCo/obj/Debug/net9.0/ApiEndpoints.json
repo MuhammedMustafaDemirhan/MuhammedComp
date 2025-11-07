@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "MuhammedCo.API.Controllers.CustomersController",
+    "Method": "GetById",
+    "RelativePath": "api/Customers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuhammedCo.API.Controllers.CustomersController",
     "Method": "All",
     "RelativePath": "api/Customers/All",
     "HttpMethod": "GET",
