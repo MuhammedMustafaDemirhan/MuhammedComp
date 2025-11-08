@@ -1,0 +1,90 @@
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using MuhammedCo.API.Filters;
+using MuhammedCo.Core.DTO_s;
+using MuhammedCo.Core.DTOs;
+using MuhammedCo.Core.DTOs.UpdateDTOs;
+using MuhammedCo.Core.Models;
+using MuhammedCo.Core.Services;
+
+namespace MuhammedCo.API.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class DepartmentsController : CustomBaseController
+    {
+        private readonly IDepartmentService _DepartmentService;
+        private readonly IMapper _mapper;
+
+        public DepartmentsController(IDepartmentService DepartmentService, IMapper mapper)
+        {
+            _DepartmentService = DepartmentService;
+            _mapper = mapper;
+        }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> All()
+        {
+            var Departments = _DepartmentService.GetAll();
+            var dtos = _mapper.Map<List<DepartmentDto>>(Departments).ToList();
+
+            return CreateActionResult(CustomResponseDto<List<DepartmentDto>>.Success(200, dtos));
+        }
+
+        [ServiceFilter(typeof(NotFoundFilter<Department>))]
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var Department = await _DepartmentService.GetByIdAsync(id);
+            var DepartmentDto = _mapper.Map<DepartmentDto>(Department);
+            return CreateActionResult(CustomResponseDto<DepartmentDto>.Success(200, DepartmentDto));
+        }
+
+        [ServiceFilter(typeof(NotFoundFilter<Department>))]
+        [HttpGet("[action]")]
+        public async Task<IActionResult> Remove(int id)
+        {
+            int userId = 1;
+
+            var Department = await _DepartmentService.GetByIdAsync(id);
+            Department.UpdatedBy = userId;
+
+            _DepartmentService.ChangeStatus(Department);
+
+            return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Save(DepartmentDto DepartmentDto)
+        {
+            int userId = 1;
+
+            var processedEntity = _mapper.Map<Department>(DepartmentDto);
+
+            processedEntity.UpdatedBy = userId;
+            processedEntity.CreatedBy = userId;
+
+            var Department = await _DepartmentService.AddAsync(processedEntity);
+
+            var DepartmentResponseDto = _mapper.Map<DepartmentDto>(Department);
+
+            return CreateActionResult(CustomResponseDto<DepartmentDto>.Success(201, DepartmentDto));
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update(DepartmentUpdateDto DepartmentDto)
+        {
+            var userId = 1;
+
+            var currentDepartment = await _DepartmentService.GetByIdAsync(DepartmentDto.Id);
+
+            currentDepartment.UpdatedBy = userId;
+            currentDepartment.Name = DepartmentDto.Name;
+
+            _DepartmentService.Update(currentDepartment);
+
+            return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
+        }
+    }
+}
