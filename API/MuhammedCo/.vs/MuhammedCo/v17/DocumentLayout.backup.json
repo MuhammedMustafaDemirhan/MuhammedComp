@@ -1,71 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-08T08:55:59.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CustomersController.cs",
-              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowFgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T08:42:23.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DepartmentsController.cs",
-              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\DepartmentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
-              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\DepartmentsController.cs",
-              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T08:42:02.311Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

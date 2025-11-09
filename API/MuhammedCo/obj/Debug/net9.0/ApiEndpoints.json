@@ -146,5 +146,79 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuhammedCo.API.Controllers.GroupsController",
+    "Method": "Save",
+    "RelativePath": "api/Groups",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GroupDto",
+        "Type": "MuhammedCo.Core.DTO_s.GroupDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuhammedCo.API.Controllers.GroupsController",
+    "Method": "Update",
+    "RelativePath": "api/Groups",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GroupDto",
+        "Type": "MuhammedCo.Core.DTOs.UpdateDTOs.GroupUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuhammedCo.API.Controllers.GroupsController",
+    "Method": "GetById",
+    "RelativePath": "api/Groups/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuhammedCo.API.Controllers.GroupsController",
+    "Method": "All",
+    "RelativePath": "api/Groups/All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MuhammedCo.API.Controllers.GroupsController",
+    "Method": "Remove",
+    "RelativePath": "api/Groups/Remove",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
