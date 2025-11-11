@@ -10,6 +10,6 @@ namespace MuhammedCo.Core.DTO_s
     public class GroupDto:BaseDto
     {
         public string Name { get; set; }
-        public List<User> Users { get; set; }
+        public List<User>? Users { get; set; }
     }
 }

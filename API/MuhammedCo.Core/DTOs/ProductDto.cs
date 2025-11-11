@@ -11,6 +11,6 @@ namespace MuhammedCo.Core.DTO_s
     {
         public string Name { get; set; }
         public double UnitPrice { get; set; }
-        public List<Sale> Sales { get; set; }
+        public List<Sale>? Sales { get; set; }
     }
 }

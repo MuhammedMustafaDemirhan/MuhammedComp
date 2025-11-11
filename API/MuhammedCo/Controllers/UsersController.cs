@@ -88,5 +88,17 @@ namespace MuhammedCo.API.Controllers
 
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Login(UserLoginDto userLoginDto)
+        {
+            Token token = await _UserService.Login(userLoginDto);
+
+            if (token == null)
+            {
+                return CreateActionResult(CustomResponseDto<NoContentDto>.Fail(401, "Bilgiler Uyuşmuyor"));
+            }
+            return CreateActionResult(CustomResponseDto<Token>.Success(200, token));
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace MuhammedCo.Core.DTOs
         public T Data { get; set; }
         [JsonIgnore]
         public int StatusCode { get; set; }
-        public List<string> Errors { get; set; }
+        public List<string>? Errors { get; set; }
         public static CustomResponseDto<T> Success(int statusCode, T data)
         {
             return new CustomResponseDto<T> { Data = data, StatusCode = statusCode, Errors=null };
