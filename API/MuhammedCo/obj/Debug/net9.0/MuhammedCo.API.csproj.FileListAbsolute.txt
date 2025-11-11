@@ -191,3 +191,4 @@ C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\
 C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\muham\OneDrive\Masaüstü\MuhammedComp\MuhammedComp\API\MuhammedCo\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

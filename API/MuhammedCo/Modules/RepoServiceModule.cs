@@ -24,6 +24,8 @@ namespace MuhammedCo.API.Modules
                 .InstancePerLifetimeScope();
             builder.RegisterType<UnitOfWorks>().As<IUnitOfWorks>();
 
+            builder.RegisterType<TokenHandler>().As<ITokenHandler>();
+
             var apiAssembly = Assembly.GetExecutingAssembly();
             var repoAssembly = Assembly.GetAssembly(typeof(AppDbContext));
             var serviceAssembly = Assembly.GetAssembly(typeof(MapProfile));
