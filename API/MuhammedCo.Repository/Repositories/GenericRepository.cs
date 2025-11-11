@@ -23,6 +23,7 @@ namespace MuhammedCo.Repository.Repositories
 
         public async Task AddAsync(T entity)
         {
+            entity.Status = true;
             await _dbset.AddAsync(entity);
         }
 

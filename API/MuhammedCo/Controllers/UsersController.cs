@@ -7,6 +7,7 @@ using MuhammedCo.Core.DTOs;
 using MuhammedCo.Core.DTOs.UpdateDTOs;
 using MuhammedCo.Core.Models;
 using MuhammedCo.Core.Services;
+using MuhammedCo.Service.Hashing;
 
 namespace MuhammedCo.API.Controllers
 {
@@ -64,6 +65,13 @@ namespace MuhammedCo.API.Controllers
 
             processedEntity.UpdatedBy = userId;
             processedEntity.CreatedBy = userId;
+
+            byte[] passwordHash, passwordSalt;
+
+            HashingHelper.CreatePassword(UserDto.Password, out passwordHash, out passwordSalt);
+
+            processedEntity.PasswordHash = passwordHash;
+            processedEntity.PasswordSalt = passwordSalt;
 
             var User = await _UserService.AddAsync(processedEntity);
 

@@ -5675,7 +5675,8 @@
       "MuhammedCo.Repository >= 1.0.0",
       "MuhammedCo.Service >= 1.0.0",
       "NSwag.AspNetCore >= 14.6.1",
-      "Swashbuckle.AspNetCore >= 9.0.6"
+      "Swashbuckle.AspNetCore >= 9.0.6",
+      "System.IdentityModel.Tokens.Jwt >= 8.0.1"
     ]
   },
   "packageFolders": {
@@ -5764,6 +5765,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[9.0.6, )"
+          },
+          "System.IdentityModel.Tokens.Jwt": {
+            "target": "Package",
+            "version": "[8.0.1, )"
           }
         },
         "imports": [

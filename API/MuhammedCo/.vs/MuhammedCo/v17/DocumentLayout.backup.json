@@ -3,7 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9F30D535-6E55-4220-97D3-7B296A48D613}|..\\MuhammedCo.Service\\MuhammedCo.Service.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco.service\\services\\tokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E896BB4-B3AE-46B2-903A-BD6FC8B22322}|..\\MuhammedCo.Core\\MuhammedCo.Core.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco.core\\services\\itokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4E896BB4-B3AE-46B2-903A-BD6FC8B22322}|..\\MuhammedCo.Core\\MuhammedCo.Core.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco.core\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E896BB4-B3AE-46B2-903A-BD6FC8B22322}|..\\MuhammedCo.Core\\MuhammedCo.Core.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco.core\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\modules\\reposervicemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:modules\\reposervicemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E896BB4-B3AE-46B2-903A-BD6FC8B22322}|..\\MuhammedCo.Core\\MuhammedCo.Core.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco.core\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -19,11 +32,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepoServiceModule.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Modules\\RepoServiceModule.cs",
+              "RelativeDocumentMoniker": "Modules\\RepoServiceModule.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Modules\\RepoServiceModule.cs",
+              "RelativeToolTip": "Modules\\RepoServiceModule.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T09:12:55.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TokenHandler.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Service\\Services\\TokenHandler.cs",
+              "RelativeDocumentMoniker": "..\\MuhammedCo.Service\\Services\\TokenHandler.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Service\\Services\\TokenHandler.cs",
+              "RelativeToolTip": "..\\MuhammedCo.Service\\Services\\TokenHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T09:10:23.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Token.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Models\\Token.cs",
+              "RelativeDocumentMoniker": "..\\MuhammedCo.Core\\Models\\Token.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Models\\Token.cs",
+              "RelativeToolTip": "..\\MuhammedCo.Core\\Models\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T08:52:11.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ITokenHandler.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Services\\ITokenHandler.cs",
+              "RelativeDocumentMoniker": "..\\MuhammedCo.Core\\Services\\ITokenHandler.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Services\\ITokenHandler.cs",
+              "RelativeToolTip": "..\\MuhammedCo.Core\\Services\\ITokenHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T08:51:39.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\MuhammedCo.Core\\Models\\User.cs",
@@ -36,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\DTOs\\UserDto.cs",
               "RelativeDocumentMoniker": "..\\MuhammedCo.Core\\DTOs\\UserDto.cs",
@@ -49,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "UserLoginDto.cs",
               "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo.Core\\DTOs\\UserLoginDto.cs",
               "RelativeDocumentMoniker": "..\\MuhammedCo.Core\\DTOs\\UserLoginDto.cs",

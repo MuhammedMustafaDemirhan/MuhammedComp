@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuhammedCo.API.Filters;
@@ -23,7 +24,7 @@ namespace MuhammedCo.API.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("[action]")]
+        [HttpGet]
         public async Task<IActionResult> All()
         {
             var Groups = _GroupService.GetAll();
