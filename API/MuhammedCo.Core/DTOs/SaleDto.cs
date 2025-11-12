@@ -12,9 +12,9 @@ namespace MuhammedCo.Core.DTO_s
         public int ProductId { get; set; }
         public int Quantity { get; set; }
         public double UnitPrice { get; set; }
-        public double TotalPrice { get; set; }
+        public double? TotalPrice { get; set; }
 
-        public CustomerDto Customer { get; set; }
-        public ProductDto Product { get; set; }
+        public CustomerDto? Customer { get; set; }
+        public ProductDto? Product { get; set; }
     }
 }

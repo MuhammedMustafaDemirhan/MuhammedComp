@@ -9,5 +9,6 @@ namespace MuhammedCo.Core.Services
 {
     public interface ISaleService:IService<Sale>
     {
+        Task SaleProduct(Sale sale);
     }
 }

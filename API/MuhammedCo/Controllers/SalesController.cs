@@ -72,6 +72,21 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<SaleDto>.Success(201, SaleDto));
         }
 
+        [HttpPost("[action]")]
+        public async Task<IActionResult> SaleProduct(SaleDto SaleDto)
+        {
+            int userId = 1;
+
+            var processedEntity = _mapper.Map<Sale>(SaleDto);
+
+            processedEntity.UpdatedBy = userId;
+            processedEntity.CreatedBy = userId;
+
+            await _SaleService.SaleProduct(processedEntity);
+
+            return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
+        }
+
         [HttpPut]
         public async Task<IActionResult> Update(SaleUpdateDto SaleDto)
         {

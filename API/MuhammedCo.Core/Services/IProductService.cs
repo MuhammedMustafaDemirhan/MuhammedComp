@@ -9,5 +9,6 @@ namespace MuhammedCo.Core.Services
 {
     public interface IProductService:IService<Product>
     {
+        Task BuyProduct(Product product);
     }
 }
