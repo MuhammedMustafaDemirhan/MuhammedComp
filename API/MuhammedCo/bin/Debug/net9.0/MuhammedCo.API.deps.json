@@ -16,7 +16,8 @@
           "MuhammedCo.Repository": "1.0.0",
           "MuhammedCo.Service": "1.0.0",
           "NSwag.AspNetCore": "14.6.1",
-          "Swashbuckle.AspNetCore": "9.0.6"
+          "Swashbuckle.AspNetCore": "9.0.6",
+          "System.IdentityModel.Tokens.Jwt": "8.0.1"
         },
         "runtime": {
           "MuhammedCo.API.dll": {}
@@ -1280,7 +1281,8 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "FluentValidation": "12.0.0",
-          "MuhammedCo.Core": "1.0.0"
+          "MuhammedCo.Core": "1.0.0",
+          "System.IdentityModel.Tokens.Jwt": "8.0.1"
         },
         "runtime": {
           "MuhammedCo.Service.dll": {
