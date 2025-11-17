@@ -45,7 +45,7 @@ namespace MuhammedCo.API.Controllers
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var Role = await _RoleService.GetByIdAsync(id);
             Role.UpdatedBy = userId;
@@ -58,7 +58,7 @@ namespace MuhammedCo.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Save(RoleDto RoleDto)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var processedEntity = _mapper.Map<Role>(RoleDto);
 
@@ -75,7 +75,7 @@ namespace MuhammedCo.API.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(RoleUpdateDto RoleDto)
         {
-            var userId = 1;
+            var userId = GetUserFromToken();
 
             var currentRole = await _RoleService.GetByIdAsync(RoleDto.Id);
 

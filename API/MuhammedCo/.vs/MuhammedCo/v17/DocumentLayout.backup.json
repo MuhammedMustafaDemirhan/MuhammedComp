@@ -1,12 +1,53 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|c:\\users\\muham\\onedrive\\masa\u00FCst\u00FC\\muhammedcomp\\muhammedcomp\\api\\muhammedco\\controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C185454F-062D-472B-884C-BF2796D560C5}|MuhammedCo.API.csproj|solutionrelative:controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T14:13:15.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomBaseController.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\CustomBaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomBaseController.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Masa\u00FCst\u00FC\\MuhammedComp\\MuhammedComp\\API\\MuhammedCo\\Controllers\\CustomBaseController.cs",
+              "RelativeToolTip": "Controllers\\CustomBaseController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T14:06:50.649Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -24,6 +24,7 @@ namespace MuhammedCo.API.Controllers
             _mapper = mapper;
         }
 
+        [Authorize(Roles = "Root, Root.Groups, Root.Groups.Get")]
         [HttpGet]
         public async Task<IActionResult> All()
         {
@@ -33,6 +34,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<List<GroupDto>>.Success(200, dtos));
         }
 
+        [Authorize(Roles = "Root, Root.Groups, Root.Groups.Get")]
         [ServiceFilter(typeof(NotFoundFilter<Group>))]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -42,11 +44,12 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<GroupDto>.Success(200, GroupDto));
         }
 
+        [Authorize(Roles = "Root, Root.Groups, Root.Groups.Delete")]
         [ServiceFilter(typeof(NotFoundFilter<Group>))]
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var Group = await _GroupService.GetByIdAsync(id);
             Group.UpdatedBy = userId;
@@ -56,10 +59,11 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
 
+        [Authorize(Roles = "Root, Root.Groups, Root.Groups.Add")]
         [HttpPost]
         public async Task<IActionResult> Save(GroupDto GroupDto)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var processedEntity = _mapper.Map<Group>(GroupDto);
 
@@ -76,7 +80,7 @@ namespace MuhammedCo.API.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(GroupUpdateDto GroupDto)
         {
-            var userId = 1;
+            var userId = GetUserFromToken();
 
             var currentGroup = await _GroupService.GetByIdAsync(GroupDto.Id);
 

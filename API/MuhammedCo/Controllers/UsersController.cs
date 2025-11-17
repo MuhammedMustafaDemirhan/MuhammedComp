@@ -46,7 +46,7 @@ namespace MuhammedCo.API.Controllers
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var User = await _UserService.GetByIdAsync(id);
             User.UpdatedBy = userId;
@@ -59,7 +59,7 @@ namespace MuhammedCo.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Save(UserDto UserDto)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var processedEntity = _mapper.Map<User>(UserDto);
 
@@ -83,7 +83,7 @@ namespace MuhammedCo.API.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(UserUpdateDto UserDto)
         {
-            var userId = 1;
+            var userId = GetUserFromToken();
 
             var currentUser = await _UserService.GetByIdAsync(UserDto.Id);
 

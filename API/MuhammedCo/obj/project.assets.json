@@ -2006,6 +2006,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "FluentValidation": "12.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.10",
           "MuhammedCo.Core": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.0.1"
         },

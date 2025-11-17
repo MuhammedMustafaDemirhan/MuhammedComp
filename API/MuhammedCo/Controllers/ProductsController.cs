@@ -45,7 +45,7 @@ namespace MuhammedCo.API.Controllers
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var Product = await _ProductService.GetByIdAsync(id);
             Product.UpdatedBy = userId;
@@ -58,7 +58,7 @@ namespace MuhammedCo.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Save(ProductDto ProductDto)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var processedEntity = _mapper.Map<Product>(ProductDto);
 
@@ -75,7 +75,7 @@ namespace MuhammedCo.API.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> BuyProduct(ProductDto ProductDto)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var processedEntity = _mapper.Map<Product>(ProductDto);
 
@@ -92,7 +92,7 @@ namespace MuhammedCo.API.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(ProductUpdateDto ProductDto)
         {
-            var userId = 1;
+            var userId = GetUserFromToken();
 
             var currentProduct = await _ProductService.GetByIdAsync(ProductDto.Id);
 

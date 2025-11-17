@@ -4,6 +4,7 @@ using MuhammedCo.Core.Repositories;
 using MuhammedCo.Core.Services;
 using MuhammedCo.Core.UnitOfWorks;
 using MuhammedCo.Service.Hashing;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace MuhammedCo.Service.Services
 
         public User GetByEmail(string email)
         {
-            User user = _userRepository.Where(x => x.Email == email).FirstOrDefault();
+            User user = _userRepository.Where(u => u.Email == email).Include(u => u.Group).ThenInclude(g => g.GroupInRoles).ThenInclude(x => x.Role).FirstOrDefault();
 
             return user ?? user;
         }
@@ -42,10 +43,9 @@ namespace MuhammedCo.Service.Services
 
             result = HashingHelper.VerifyPasswordHash(userLoginDto.Password, user.PasswordHash, user.PasswordSalt);
 
-            List<Role> roles = new List<Role>();
-
             if(result)
             {
+                var roles = user.Group.GroupInRoles.Select(x => x.Role).ToList();
                 token = _tokenHandler.CreateToken(user, roles);
                 return token;
             }

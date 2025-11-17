@@ -45,7 +45,7 @@ namespace MuhammedCo.API.Controllers
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
         {
-            int userId = 1;
+            int userId = GetUserFromToken();
 
             var Department = await _DepartmentService.GetByIdAsync(id);
             Department.UpdatedBy = userId;
@@ -75,7 +75,7 @@ namespace MuhammedCo.API.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(DepartmentUpdateDto DepartmentDto)
         {
-            var userId = 1;
+            var userId = GetUserFromToken();
 
             var currentDepartment = await _DepartmentService.GetByIdAsync(DepartmentDto.Id);
 
