@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuhammedCo.API.Filters;
@@ -23,6 +24,7 @@ namespace MuhammedCo.API.Controllers
             _mapper = mapper;
         }
 
+        [Authorize(Roles = "Root, Root.Roles, Root.Roles.Get")]
         [HttpGet("[action]")]
         public async Task<IActionResult> All()
         {
@@ -32,6 +34,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<List<RoleDto>>.Success(200, dtos));
         }
 
+        [Authorize(Roles = "Root, Root.Roles, Root.Roles.Get")]
         [ServiceFilter(typeof(NotFoundFilter<Role>))]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -41,6 +44,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<RoleDto>.Success(200, RoleDto));
         }
 
+        [Authorize(Roles = "Root, Root.Roles, Root.Roles.Delete")]
         [ServiceFilter(typeof(NotFoundFilter<Role>))]
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
@@ -55,6 +59,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
 
+        [Authorize(Roles = "Root, Root.Roles, Root.Roles.Add")]
         [HttpPost]
         public async Task<IActionResult> Save(RoleDto RoleDto)
         {
@@ -72,6 +77,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<RoleDto>.Success(201, RoleDto));
         }
 
+        [Authorize(Roles = "Root, Root.Roles, Root.Roles.Update")]
         [HttpPut]
         public async Task<IActionResult> Update(RoleUpdateDto RoleDto)
         {

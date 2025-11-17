@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing.Constraints;
@@ -24,6 +25,7 @@ namespace MuhammedCo.API.Controllers
             _mapper = mapper;
         }
 
+        [Authorize(Roles = "Root, Root.Customers, Root.Customers.Get")]
         [HttpGet("[action]")]
         public async Task<IActionResult> All()
         {
@@ -33,6 +35,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<List<CustomerDto>>.Success(200, dtos));
         }
 
+        [Authorize(Roles = "Root, Root.Customers, Root.Customers.Get")]
         [ServiceFilter(typeof(NotFoundFilter<Customer>))]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -42,6 +45,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<CustomerDto>.Success(200, customerDto));
         }
 
+        [Authorize(Roles = "Root, Root.Customers, Root.Customers.Delete")]
         [ServiceFilter(typeof(NotFoundFilter<Customer>))]
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
@@ -56,6 +60,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
 
+        [Authorize(Roles = "Root, Root.Customers, Root.Customers.Add")]
         [HttpPost]
         public async Task<IActionResult> Save(CustomerDto customerDto)
         {
@@ -73,6 +78,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<CustomerDto>.Success(201, customerDto));
         }
 
+        [Authorize(Roles = "Root, Root.Customers, Root.Customers.Update")]
         [HttpPut]
         public async Task<IActionResult> Update(CustomerUpdateDto customerDto)
         {

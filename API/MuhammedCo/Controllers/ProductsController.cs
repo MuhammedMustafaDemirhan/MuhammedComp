@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuhammedCo.API.Filters;
@@ -23,6 +24,7 @@ namespace MuhammedCo.API.Controllers
             _mapper = mapper;
         }
 
+        [Authorize(Roles = "Root, Root.Products, Root.Products.Get")]
         [HttpGet("[action]")]
         public async Task<IActionResult> All()
         {
@@ -32,6 +34,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<List<ProductDto>>.Success(200, dtos));
         }
 
+        [Authorize(Roles = "Root, Root.Products, Root.Products.Get")]
         [ServiceFilter(typeof(NotFoundFilter<Product>))]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -41,6 +44,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<ProductDto>.Success(200, ProductDto));
         }
 
+        [Authorize(Roles = "Root, Root.Products, Root.Products.Delete")]
         [ServiceFilter(typeof(NotFoundFilter<Product>))]
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
@@ -55,6 +59,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
 
+        [Authorize(Roles = "Root, Root.Products, Root.Products.Add")]
         [HttpPost]
         public async Task<IActionResult> Save(ProductDto ProductDto)
         {
@@ -72,6 +77,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<ProductDto>.Success(201, ProductDto));
         }
 
+        [Authorize(Roles = "Root, Root.Products, Root.Products.BuyProduct")]
         [HttpPost("[action]")]
         public async Task<IActionResult> BuyProduct(ProductDto ProductDto)
         {
@@ -89,6 +95,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
 
+        [Authorize(Roles = "Root, Root.Products, Root.Products.Update")]
         [HttpPut]
         public async Task<IActionResult> Update(ProductUpdateDto ProductDto)
         {

@@ -77,6 +77,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<GroupDto>.Success(201, GroupDto));
         }
 
+        [Authorize(Roles = "Root, Root.Groups, Root.Groups.Update")]
         [HttpPut]
         public async Task<IActionResult> Update(GroupUpdateDto GroupDto)
         {

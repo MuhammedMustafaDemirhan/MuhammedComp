@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuhammedCo.API.Filters;
@@ -23,6 +24,7 @@ namespace MuhammedCo.API.Controllers
             _mapper = mapper;
         }
 
+        [Authorize(Roles = "Root, Root.Payments, Root.Payments.Get")]
         [HttpGet("[action]")]
         public async Task<IActionResult> All()
         {
@@ -32,6 +34,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<List<PaymentDto>>.Success(200, dtos));
         }
 
+        [Authorize(Roles = "Root, Root.Payments, Root.Payments.Get")]
         [ServiceFilter(typeof(NotFoundFilter<Payment>))]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -41,6 +44,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<PaymentDto>.Success(200, PaymentDto));
         }
 
+        [Authorize(Roles = "Root, Root.Payments, Root.Payments.Delete")]
         [ServiceFilter(typeof(NotFoundFilter<Payment>))]
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
@@ -55,6 +59,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
 
+        [Authorize(Roles = "Root, Root.Payments, Root.Payments.Add")]
         [HttpPost]
         public async Task<IActionResult> Save(PaymentDto PaymentDto)
         {
@@ -72,6 +77,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<PaymentDto>.Success(201, PaymentDto));
         }
 
+        [Authorize(Roles = "Root, Root.Payments, Root.Payments.Update")]
         [HttpPut]
         public async Task<IActionResult> Update(PaymentUpdateDto PaymentDto)
         {

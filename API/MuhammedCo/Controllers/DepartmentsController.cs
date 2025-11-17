@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuhammedCo.API.Filters;
@@ -23,6 +24,7 @@ namespace MuhammedCo.API.Controllers
             _mapper = mapper;
         }
 
+        [Authorize(Roles = "Root, Root.Departments, Root.Departments.Get")]
         [HttpGet("[action]")]
         public async Task<IActionResult> All()
         {
@@ -32,6 +34,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<List<DepartmentDto>>.Success(200, dtos));
         }
 
+        [Authorize(Roles = "Root, Root.Departments, Root.Departments.Get")]
         [ServiceFilter(typeof(NotFoundFilter<Department>))]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -41,6 +44,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<DepartmentDto>.Success(200, DepartmentDto));
         }
 
+        [Authorize(Roles = "Root, Root.Departments, Root.Departments.Delete")]
         [ServiceFilter(typeof(NotFoundFilter<Department>))]
         [HttpGet("[action]")]
         public async Task<IActionResult> Remove(int id)
@@ -55,6 +59,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<NoContentDto>.Success(204));
         }
 
+        [Authorize(Roles = "Root, Root.Departments, Root.Departments.Add")]
         [HttpPost]
         public async Task<IActionResult> Save(DepartmentDto DepartmentDto)
         {
@@ -72,6 +77,7 @@ namespace MuhammedCo.API.Controllers
             return CreateActionResult(CustomResponseDto<DepartmentDto>.Success(201, DepartmentDto));
         }
 
+        [Authorize(Roles = "Root, Root.Departments, Root.Departments.Update")]
         [HttpPut]
         public async Task<IActionResult> Update(DepartmentUpdateDto DepartmentDto)
         {
